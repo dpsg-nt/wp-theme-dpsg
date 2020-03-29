@@ -2,7 +2,7 @@
 add_action('admin_menu', 'crb_add_theme_readme');
 
 function crb_add_theme_readme() {
-	wp_register_style('theme-help-style', get_bloginfo('stylesheet_directory') . '/lib/theme-help/theme-help.css', array(), '0.1', 'screen');
+	wp_register_style('theme-help-style', get_bloginfo('template_url') . '/lib/theme-help/theme-help.css', array(), '0.1', 'screen');
 	wp_enqueue_style('theme-help-style');
 	add_menu_page(__('Theme Help', 'crb'), __('Theme Help', 'crb'), 'administrator', 'theme-readme', 'crb_include_theme_help');
 }

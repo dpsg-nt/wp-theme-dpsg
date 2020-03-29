@@ -6,15 +6,15 @@
 
 		<title><?php wp_title('&laquo;', true, 'right'); ?> <?php bloginfo('name'); ?></title>
 
-		<link rel="shortcut icon" href="<?php bloginfo('stylesheet_directory'); ?>/images/favicon.ico" />
+		<link rel="shortcut icon" href="<?php bloginfo('template_url'); ?>/images/favicon.ico" />
 		<?php wp_head(); ?>
-		<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
+		<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/style.css" type="text/css" media="screen" />
 		<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 
 		<?php if ( is_singular() ) wp_enqueue_script( 'comment-reply' ); ?>
 
-		<link rel="stylesheet/less" href="<?php bloginfo('stylesheet_directory'); ?>/css/style.less" type="text/css" media="screen, print" />
-		<script src="<?php bloginfo('stylesheet_directory'); ?>/js/less-1.6.3.min.js"></script>
+		<link rel="stylesheet/less" href="<?php bloginfo('template_url'); ?>/css/style.less" type="text/css" media="screen, print" />
+		<script src="<?php bloginfo('template_url'); ?>/js/less-1.6.3.min.js"></script>
 
 	</head>
 	<body <?php body_class(); ?>>
@@ -24,7 +24,7 @@
 					<div class="row">
 						<div class="col-xs-6 col-lg-4">
 							<h1 id="logo">
-								<a href="<?php echo get_home_url(null, '/'); ?>" title="<?php dpsg_sitename(); ?>"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/logo.png" alt="blog.dpsg.de" /></a>
+								<a href="<?php echo get_home_url(null, '/'); ?>" title="<?php dpsg_sitename(); ?>"><img src="<?php bloginfo('template_url'); ?>/images/logo.png" alt="blog.dpsg.de" /></a>
 							</h1><!-- /#logo -->
 						</div><!-- /.col-xs-12 -->
 
