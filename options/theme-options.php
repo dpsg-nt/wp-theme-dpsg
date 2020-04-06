@@ -25,6 +25,9 @@ $header_fields = array(
 	Carbon_Field::factory('text', 'dpsg_header_text_link_url', 'Text link'),
 	Carbon_Field::factory('select', 'dpsg_header_text_link_target', 'Open link in')
 		->add_options($link_targets),
+	
+	Carbon_Field::factory('image', 'dpsg_logo_url', 'Logo URL')
+
 );
 
 $footer_fields = array(
